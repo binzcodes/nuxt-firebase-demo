@@ -1,6 +1,5 @@
 <template>
   <v-list>
-    <v-subheader inset>Shopping basket</v-subheader>
     <v-list-item v-for="item in basket" :key="item.text">
       <v-list-item-content>
         <v-list-item-title v-text="item.text" />
