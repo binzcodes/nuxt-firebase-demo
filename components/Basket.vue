@@ -3,8 +3,9 @@
     <v-subheader inset>Shopping basket</v-subheader>
     <v-list-item v-for="item in basket" :key="item.text">
       <v-list-item-content>
-        <v-list-item-title v-text="item.text"></v-list-item-title>
-        <v-list-item-title v-text="item.subtitle"></v-list-item-title>
+        <v-list-item-title v-text="item.text" />
+        <v-list-item-subtitle v-text="item.subtitle" />
+        <v-list-item-subtitle class="text--primary"  v-text="`£${item.price / 100}`" />
       </v-list-item-content>
       <v-list-item-action>
           <v-btn icon @click="removeItem(item)">
