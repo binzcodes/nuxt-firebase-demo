@@ -1,4 +1,5 @@
 # nuxt-firebase
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55950d29-0a4c-48f4-9daf-559b8ee48623/deploy-status)](https://app.netlify.com/sites/nuxt-firebase-demo/deploys)
 
 ## Build Setup
 

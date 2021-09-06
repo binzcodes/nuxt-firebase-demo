@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+// import { mapMutations } from 'vuex'
 
 export default {
   name: 'Basket',
@@ -32,9 +32,10 @@ export default {
     removeItem (e) {
       this.$store.commit('basket/remove', e)
     },
-    ...mapMutations({
-      toggle: 'basket/toggle'
-    })
+    // ...mapMutations({
+    //   increment: 'basket/increment',
+    //   decrement: 'basket/decrement'
+    // })
   }
 }
 </script>
