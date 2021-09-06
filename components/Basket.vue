@@ -28,10 +28,8 @@ export default {
   methods: {
     addItem (e) {
       this.$store.commit('basket/add', e.target.value)
-      e.target.value = ''
     },
     removeItem (e) {
-      console.log(e)
       this.$store.commit('basket/remove', e)
     },
     ...mapMutations({
