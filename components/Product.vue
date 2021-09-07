@@ -14,7 +14,7 @@
 
     <v-card-text class="text--primary">
       <div class="mt-2 text-subtitle">
-        £{{item.price / 100}} • {{item.stock}} in stock
+        £{{(item.price / 100).toFixed(2)}} • {{item.stock}} in stock
       </div>
 
       <v-row
