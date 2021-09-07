@@ -46,16 +46,7 @@
       <Basket />
 
       <template #append>
-        <div class="pa-2">
-          <v-list-item-content>
-            <v-list-item-title class="text-h6">
-              Total £{{basketTotal / 100}}
-            </v-list-item-title>
-          </v-list-item-content>
-          <v-btn block color="primary">
-            Pay now
-          </v-btn>
-        </div>
+        <BasketSummary />
       </template>
 
     </v-navigation-drawer>
@@ -70,9 +61,11 @@
 
 <script>
 import Basket from '~/components/Basket'
+import BasketSummary from '~/components/BasketSummary'
 export default {
   components: {
-    Basket
+    Basket,
+    BasketSummary
   },
   data () {
     return {
@@ -95,11 +88,6 @@ export default {
       right: true,
       rightDrawer: true,
       title: 'The Fire Store'
-    }
-  },
-  computed: {
-    basketTotal () {
-      return this.$store.state.basket.list.reduce((acc, {price}) => acc + price, 0)
     }
   },
 }
