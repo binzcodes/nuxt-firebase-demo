@@ -82,7 +82,7 @@ export default {
   // firebase configuration
   firebase: {
     config: {
-      apiKey: process.env.FIREBASE_API_KEY, // "AIzaSyAYxb9bN7kUlYc-yfhjQ5vq6rhephAiO8U",
+      apiKey: process.env.FIREBASE_API_KEY,
       authDomain: "test-nuxt-firebase-805b0.firebaseapp.com",
       projectId: "test-nuxt-firebase-805b0",
       storageBucket: "test-nuxt-firebase-805b0.appspot.com",
